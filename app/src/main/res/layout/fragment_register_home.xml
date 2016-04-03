@@ -1,0 +1,63 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.mohmurtu.registration.RegisterHome">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ShopTeja to provide all your selling needs"
+        android:layout_marginTop="70dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/text"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Terms and Conditions !!"
+        android:clickable="true"
+        android:layout_below="@+id/text"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:id="@+id/terms_text"/>
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Accept Terms and Conditions"
+        android:layout_below="@+id/terms_text"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:id="@+id/terms_checkbox"/>
+
+    <android.support.design.widget.TextInputLayout android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/layout_edit_company"
+        android:layout_below="@id/terms_checkbox"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp">
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Company Name"
+        android:id="@+id/company_name"
+        android:singleLine="true"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/buttons_color"
+        android:text="Continue"
+        android:layout_below="@+id/layout_edit_company"
+        style="?attr/borderlessButtonStyle"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/continue_button"
+        android:textSize="20sp"
+        android:textAllCaps="false"/>
+
+</RelativeLayout>

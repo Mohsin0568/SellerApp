@@ -1,0 +1,104 @@
+{
+  "project_info": {
+    "project_id": "eshopping-1189",
+    "project_number": "260770554488",
+    "name": "eShopping"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:260770554488:android:2a4f269f547ed3c8",
+        "client_id": "android:com.efanta",
+        "client_type": 1,
+        "android_client_info": {
+          "package_name": "com.efanta"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "cloud_messaging_service": {
+          "status": 2,
+          "apns_config": []
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "google_signin_service": {
+          "status": 1
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:260770554488:android:16324bc6ca7f266b",
+        "client_id": "android:efanta.login",
+        "client_type": 1,
+        "android_client_info": {
+          "package_name": "efanta.login"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "cloud_messaging_service": {
+          "status": 2,
+          "apns_config": []
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "google_signin_service": {
+          "status": 1
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:260770554488:android:0e4ccb83a9e0f2ef",
+        "client_id": "android:com.example.mohmurtu.registration",
+        "client_type": 1,
+        "android_client_info": {
+          "package_name": "com.example.mohmurtu.registration"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "cloud_messaging_service": {
+          "status": 2,
+          "apns_config": []
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "google_signin_service": {
+          "status": 1
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "client_info": [],
+  "ARTIFACT_VERSION": "1"
+}

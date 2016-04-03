@@ -1,0 +1,311 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none"
+    android:padding="5dp"
+    android:orientation="vertical"
+    tools:context="com.example.mohmurtu.registration.AddNewProduct">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/text_header"
+            android:text="Mens >> Topi >> White Topi"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:textColor="#009688"
+            android:textStyle="bold"
+            android:ellipsize="marquee"
+            android:singleLine="true"/>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_margin="8dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    android:background="@color/red_color"></RelativeLayout>
+
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="Product Description"
+                    android:inputType="textCapWords"
+                    android:layout_marginTop="20dp"
+                    android:layout_centerHorizontal="true"
+                    android:textSize="30sp"
+                    android:id="@+id/product_info_text"
+                    android:layout_below="@+id/basic_color"
+                    />
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/layout_edit_title"
+                    android:paddingTop="10dp"
+                    android:layout_below="@+id/product_info_text">
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/edit_title"
+                        android:hint="Product Title"
+                        android:singleLine="true"
+                        />
+                </android.support.design.widget.TextInputLayout>
+
+                <LinearLayout
+                    android:id="@+id/dynamiclay"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/layout_edit_title"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical">
+                </LinearLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/layout_edit_quantity"
+                    android:layout_below="@+id/dynamiclay"
+                    android:layout_marginTop="10dp">
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Quantity"
+                        android:singleLine="true"
+                        android:inputType="number"
+                        android:id="@+id/edit_quantity"/>
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/layout_edit_quantity"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/layout_edit_brand">
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/edit_brand"
+                        android:hint="Brand"
+                        android:singleLine="true"/>
+
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/layout_edit_brand"
+                    android:id="@+id/layout_edit_desc"
+                    android:layout_marginTop="10dp"
+                    android:paddingBottom="10dp">
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Product Description"
+                        style="@style/EditTextMultiStyle"
+                        android:gravity="left|top"
+                        android:lines="4"
+                        android:id="@+id/edit_desc"/>
+                </android.support.design.widget.TextInputLayout>
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_margin="8dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    android:background="@color/purple_color"></RelativeLayout>
+
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="Price Details"
+                    android:inputType="textCapWords"
+                    android:layout_marginTop="20dp"
+                    android:layout_centerHorizontal="true"
+                    android:textSize="30sp"
+                    android:id="@+id/product_price_text"
+                    android:layout_below="@+id/basic_color"
+                    />
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/layout_edit_mrp"
+                    android:layout_below="@+id/product_price_text">
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="MRP"
+                        android:singleLine="true"
+                        android:inputType="numberDecimal"
+                        android:id="@+id/edit_mrp"/>
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/layout_edit_mrp"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/layout_edit_price">
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Price"
+                        android:singleLine="true"
+                        android:inputType="numberDecimal"
+                        android:id="@+id/edit_price"/>
+                </android.support.design.widget.TextInputLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Discount: 0%"
+                    android:layout_below="@id/layout_edit_price"
+                    android:layout_marginTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:textSize="20sp"
+                    android:paddingLeft="5dp"
+                    android:id="@+id/text_discount"/>
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_margin="8dp"
+            android:id="@+id/single_image_card_view">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="5dp"
+                        android:background="@color/green_color"></RelativeLayout>
+
+                   <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/single_image_button"
+                        android:layout_centerHorizontal="true"
+                        style="?attr/borderlessButtonStyle"
+                        android:text="Select Cover Image"
+                        android:textSize="20sp"
+                        android:textAllCaps="false"
+                        android:textColor="@color/buttons_color"/>
+
+                    <LinearLayout
+                        android:id="@+id/main_selected_photos_container"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:animateLayoutChanges="true"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:visibility="visible"
+                        android:layout_below="@id/single_image_button"
+                        android:paddingBottom="10dp">
+
+                        <!-- images will be added dynamicall to this layout -->
+                    </LinearLayout>
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_margin="8dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="5dp"
+                        android:background="@color/pink_color"></RelativeLayout>
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/multi_image_button"
+                        android:layout_centerHorizontal="true"
+                        style="?attr/borderlessButtonStyle"
+                        android:text="Select Other Images"
+                        android:textSize="20sp"
+                        android:textAllCaps="false"
+                        android:textColor="@color/buttons_color"/>
+
+                    <HorizontalScrollView
+                        android:id="@+id/hori_scroll_view"
+                        android:layout_below="@id/multi_image_button"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fillViewport="false"
+                        android:foregroundGravity="left"
+                        android:paddingBottom="1dp"
+                        android:paddingTop="1dp">
+
+                        <LinearLayout
+                            android:id="@+id/selected_photos_container"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:animateLayoutChanges="true"
+                            android:gravity="left"
+                            android:orientation="horizontal"
+                            android:visibility="visible"
+                            android:paddingBottom="10dp">
+
+                            <!-- images will be added dynamicall to this layout -->
+                        </LinearLayout>
+                    </HorizontalScrollView>
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:layout_below="@id/hori_scroll_view"
+                android:layout_marginTop="20dp"
+                android:text="Upload Product"
+                android:textSize="20sp"
+                android:textColor="@color/buttons_color"
+                android:textAllCaps="false"
+                android:id="@+id/upload_product"
+                style="?attr/borderlessButtonStyle"
+                android:paddingBottom="20dp"/>
+
+
+    </LinearLayout>
+
+</ScrollView>

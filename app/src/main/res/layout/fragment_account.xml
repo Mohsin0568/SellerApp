@@ -1,0 +1,373 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none"
+    android:padding="5dp"
+    android:orientation="vertical"
+    tools:context="com.example.mohmurtu.registration.AccountFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Account Details"
+            android:layout_marginTop="10dp"
+            style="@style/TextHeading"
+            android:layout_gravity="center"
+            android:textColor="@color/purple_color"
+            />
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_margin="5dp"
+            android:background="@color/background_color">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="3dp"
+                    android:background="@color/red_color"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+                        <TextView
+                            android:layout_marginTop="10dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Personal Information"
+                            style="@style/AccountInformationSectionHeading"/>
+
+                        <ImageView
+                            android:text="Edit"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/edit"
+                            style="@style/AccountInformationEditIcon"
+                            android:id="@+id/account_personal_edit_icon"
+                            />
+
+                </RelativeLayout>
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:paddingBottom="20dp">
+                    <TableRow>
+                        <TextView
+                            android:text="Name"
+                            style="@style/AccountInformationKeyText"/>
+                        <TextView
+                            android:text=""
+                            style="@style/AccountInformationValueText"
+                            android:id="@+id/account_personal_name"/>
+                    </TableRow>
+                    <TableRow
+                        style="@style/AccountTableRow">
+                        <TextView android:text="Password"
+                            style="@style/AccountInformationKeyText"/>
+                        <TextView
+                            android:text=""
+                            android:textColor="@color/blue_color"
+                            android:textStyle="bold"
+                            style="@style/AccountInformationValueText"
+                            android:id="@+id/account_personal_change_password"/>
+                    </TableRow>
+                    <TableRow style="@style/AccountTableRow">
+                        <TextView style="@style/AccountInformationKeyText"
+                            android:text="Phone Number"/>
+                        <TextView android:text=""
+                            style="@style/AccountInformationValueText"
+                            android:id="@+id/account_personal_phone_number"/>
+                    </TableRow>
+                    <TableRow style="@style/AccountTableRow">
+                        <TextView style="@style/AccountInformationKeyText"
+                            android:text="Alternate Number"/>
+                        <TextView style="@style/AccountInformationValueText"
+                            android:text=""
+                            android:id="@+id/account_personal_alt_phone"/>
+                    </TableRow>
+                    <TableRow style="@style/AccountTableRow">
+                        <TextView style="@style/AccountInformationKeyText"
+                            android:text="Email Id"/>
+                        <TextView style="@style/AccountInformationValueText"
+                            android:text=""
+                            android:id="@+id/account_personal_email"/>
+                    </TableRow>
+                </TableLayout>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_margin="5dp"
+            android:background="@color/background_color">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="3dp"
+                    android:background="@color/teal_color"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_marginTop="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Address Information"
+                        style="@style/AccountInformationSectionHeading"/>
+
+                    <ImageView
+                        android:text="Edit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/edit"
+                        style="@style/AccountInformationEditIcon"
+                        android:id="@+id/account_address_edit_icon"
+                        />
+
+                </RelativeLayout>
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:paddingBottom="20dp">
+                    <TableRow>
+                        <TextView
+                            android:text="Address                "
+                            style="@style/AccountInformationKeyText"/>
+                        <TextView
+                            android:text=""
+                            android:singleLine="false"
+                            style="@style/AccountInformationValueText"
+                            android:id="@+id/account_address"/>
+                    </TableRow>
+                    <TableRow
+                        style="@style/AccountTableRow">
+                        <TextView android:text="City"
+                            style="@style/AccountInformationKeyText"/>
+                        <TextView
+                            android:text=""
+                            style="@style/AccountInformationValueText"
+                            android:id="@+id/account_address_city"/>
+                    </TableRow>
+                    <TableRow style="@style/AccountTableRow">
+                        <TextView style="@style/AccountInformationKeyText"
+                            android:text="State"/>
+                        <TextView android:text=""
+                            style="@style/AccountInformationValueText"
+                            android:id="@+id/account_address_state"/>
+                    </TableRow>
+                    <TableRow style="@style/AccountTableRow">
+                        <TextView style="@style/AccountInformationKeyText"
+                            android:text="Pin Code"/>
+                        <TextView style="@style/AccountInformationValueText"
+                            android:text=""
+                            android:id="@+id/account_address_pincode"/>
+                    </TableRow>
+                </TableLayout>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_margin="5dp"
+            android:background="@color/background_color">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="3dp"
+                    android:background="@color/blue_color"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_marginTop="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Company Information"
+                        style="@style/AccountInformationSectionHeading"/>
+
+                    <ImageView
+                        android:text="Edit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/edit"
+                        style="@style/AccountInformationEditIcon"
+                        android:id="@+id/account_company_edit_icon"
+                        />
+
+                </RelativeLayout>
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:paddingBottom="20dp">
+                    <TableRow>
+                        <TextView
+                            android:text="Company Name   "
+                            style="@style/AccountInformationKeyText"/>
+                        <TextView
+                            android:text=""
+                            style="@style/AccountInformationValueText"
+                            android:id="@+id/account_company_name"/>
+                    </TableRow>
+                    <TableRow
+                        style="@style/AccountTableRow">
+                        <TextView android:text="PAN Number"
+                            style="@style/AccountInformationKeyText"/>
+                        <TextView
+                            android:text=""
+                            style="@style/AccountInformationValueText"
+                            android:id="@+id/account_company_pan"/>
+                    </TableRow>
+                    <TableRow style="@style/AccountTableRow">
+                        <TextView style="@style/AccountInformationKeyText"
+                            android:text="VAT Number"/>
+                        <TextView android:text=""
+                            style="@style/AccountInformationValueText"
+                            android:id="@+id/account_company_vat_number"/>
+                    </TableRow>
+                    <TableRow style="@style/AccountTableRow">
+                        <TextView style="@style/AccountInformationKeyText"
+                            android:text="CST Number"/>
+                        <TextView style="@style/AccountInformationValueText"
+                            android:text=""
+                            android:id="@+id/account_company_cst_number"/>
+                    </TableRow>
+                </TableLayout>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_margin="5dp"
+            android:background="@color/background_color">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="3dp"
+                    android:background="@color/pink_color"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_marginTop="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Bank Information"
+                        style="@style/AccountInformationSectionHeading"/>
+
+                    <ImageView
+                        android:text="Edit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/edit"
+                        style="@style/AccountInformationEditIcon"
+                        android:id="@+id/account_bank_edit_icon"
+                        />
+
+                </RelativeLayout>
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:paddingBottom="20dp">
+                    <TableRow>
+                        <TextView
+                            android:text="Beneficiary Name"
+                            style="@style/AccountInformationKeyText"/>
+                        <TextView
+                            android:text=""
+                            style="@style/AccountInformationValueText"
+                            android:id="@+id/account_bank_beneficiary_name"/>
+                    </TableRow>
+                    <TableRow
+                        style="@style/AccountTableRow">
+                        <TextView android:text="Account Number"
+                            style="@style/AccountInformationKeyText"/>
+                        <TextView
+                            android:text=""
+                            style="@style/AccountInformationValueText"
+                            android:id="@+id/account_bank_account_number"/>
+                    </TableRow>
+                    <TableRow style="@style/AccountTableRow">
+                        <TextView style="@style/AccountInformationKeyText"
+                            android:text="Bank Name"/>
+                        <TextView android:text=""
+                            style="@style/AccountInformationValueText"
+                            android:id="@+id/account_bank_name"/>
+                    </TableRow>
+                    <TableRow style="@style/AccountTableRow">
+                        <TextView style="@style/AccountInformationKeyText"
+                            android:text="Branch"/>
+                        <TextView style="@style/AccountInformationValueText"
+                            android:text=""
+                            android:id="@+id/account_bank_branch"/>
+                    </TableRow>
+                    <TableRow style="@style/AccountTableRow">
+                        <TextView style="@style/AccountInformationKeyText"
+                            android:text="IFSC Code"/>
+                        <TextView style="@style/AccountInformationValueText"
+                            android:text=""
+                            android:id="@+id/account_bank_ifsc"/>
+                    </TableRow>
+                </TableLayout>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            style="?borderlessButtonStyle"
+            android:text="Back"
+            android:textSize="20sp"
+            android:textColor="@color/buttons_color"
+            android:textAllCaps="false"
+            android:id="@+id/account_back_button"/>
+    </LinearLayout>
+</ScrollView>

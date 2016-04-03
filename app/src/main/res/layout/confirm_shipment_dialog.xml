@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="300dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Shipment Details"
+        android:id="@+id/order_shipment_details"
+        android:textSize="25sp"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/purple_color"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="@color/pink_color"
+        android:layout_below="@+id/order_shipment_details"
+        android:layout_marginTop="5dp"
+        android:id="@+id/order_shipment_view"/>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/layout_shipped_via"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp"
+        android:layout_below="@+id/order_shipment_view">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/shipped_via"
+            android:hint="Shipped Via"
+            android:singleLine="true"
+            />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/layout_shipped_tracking_id"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp"
+        android:layout_below="@+id/layout_shipped_via">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/shipped_tracking_id"
+            android:hint="Tracking Id"
+            android:singleLine="true"
+            />
+    </android.support.design.widget.TextInputLayout>
+</RelativeLayout>

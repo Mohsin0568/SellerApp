@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:fitsSystemWindows="true"
+    tools:context="com.example.mohmurtu.registration.ProductFilter">
+
+    <include android:id="@+id/toolbar"
+        layout="@layout/toolbar"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Filter by Visibility"
+
+                android:layout_marginTop="20dp"
+                android:textSize="25sp"
+                android:layout_marginLeft="30dp"
+                android:id="@+id/visibility_text"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_below="@id/visibility_text"
+                android:background="@color/colorPrimaryDark"
+                android:layout_marginTop="10dp"
+                android:id="@+id/visibility_line"/>
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/visibility_line"
+                android:id="@+id/visibility_group"
+                android:layout_marginTop="20dp">
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Enabled"
+                    android:textSize="20sp"
+                    android:layout_marginLeft="20dp"
+                    android:id="@+id/visibility_enabled"
+                    />
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Disabled"
+                    android:textSize="20sp"
+                    android:layout_marginLeft="20dp"
+                    android:id="@+id/visibility_disabled"
+                    android:layout_marginTop="10dp"
+                />
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Both"
+                    android:textSize="20sp"
+                    android:layout_marginLeft="20dp"
+                    android:id="@+id/visibility_all"
+                    android:layout_marginTop="10dp"
+
+                    />
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Filter by Approval"
+                android:layout_below="@+id/visibility_group"
+                android:layout_marginTop="20dp"
+                android:textSize="25sp"
+                android:layout_marginLeft="30dp"
+                android:id="@+id/approval_text"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_below="@id/approval_text"
+                android:background="@color/colorPrimaryDark"
+                android:layout_marginTop="10dp"
+                android:id="@+id/approval_line"/>
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/approval_line"
+                android:id="@+id/approval_group"
+                android:layout_marginTop="20dp">
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Approved Products"
+                    android:textSize="20sp"
+                    android:layout_marginLeft="20dp"
+                    android:id="@+id/approval_approved"
+                    />
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rejected Products"
+                    android:textSize="20sp"
+                    android:layout_marginLeft="20dp"
+                    android:id="@+id/approval_rejected"
+                    android:layout_marginTop="10dp"
+                    />
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pending For Approvals"
+                    android:textSize="20sp"
+                    android:layout_marginLeft="20dp"
+                    android:id="@+id/approval_pending"
+                    android:layout_marginTop="10dp"
+                    />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="All"
+                    android:textSize="20sp"
+                    android:layout_marginLeft="20dp"
+                    android:id="@+id/approval_all"
+                    android:layout_marginTop="10dp"
+                    />
+            </RadioGroup>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/approval_group"
+                android:layout_centerHorizontal="true"
+                android:text="Apply Filter"
+                android:textSize="20dp"
+                style="?attr/borderlessButtonStyle"
+                android:textColor="@color/buttons_color"
+                android:textAllCaps="false"
+                android:layout_marginTop="20dp"
+                android:id="@+id/filter_button"/>
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

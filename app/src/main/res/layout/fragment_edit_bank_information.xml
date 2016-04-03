@@ -1,0 +1,220 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.mohmurtu.registration.ProductDetailsFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:src="@drawable/bank_icon"
+                android:id="@+id/bank_info_icon"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Bank Information"
+                android:layout_below="@+id/bank_info_icon"
+                android:textSize="25sp"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/bank_info_text"
+                android:textColor="@color/purple_color"/>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/bank_info_text"
+                android:layout_marginTop="50dp"
+                android:layout_margin="8dp"
+                android:id="@+id/bank_info_card">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp"
+                        android:background="@color/red_color"
+                        android:id="@+id/view_red"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Beneficiary Name"
+                        android:layout_below="@id/view_red"
+                        android:layout_marginTop="30dp"
+                        android:layout_marginLeft="10dp"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:id="@+id/beneficiary_name_text"/>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/beneficiary_name_text"
+                        android:paddingLeft="40dp"
+                        android:paddingRight="10dp"
+                        android:id="@+id/beneficiary_name_layout">
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:singleLine="true"
+                            android:id="@+id/beneficiary_name_value"/>
+                    </android.support.design.widget.TextInputLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="30dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_below="@+id/beneficiary_name_layout"
+                        android:text="Account Number"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:id="@+id/account_number_text"
+                        />
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/account_number_text"
+                        android:paddingLeft="40dp"
+                        android:paddingRight="10dp"
+                        android:id="@+id/account_number_layout">
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="number"
+                            android:id="@+id/account_number_value"
+                            android:singleLine="true"
+                            />
+                    </android.support.design.widget.TextInputLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Bank Name"
+                        android:layout_marginTop="30dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_below="@+id/account_number_layout"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:id="@+id/bank_name_text"/>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/bank_name_text"
+                        android:paddingLeft="40dp"
+                        android:paddingRight="10dp"
+                        android:id="@+id/bank_name_layout">
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/bank_name_value"
+                            android:singleLine="true"
+                            />
+                    </android.support.design.widget.TextInputLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Branch"
+                        android:layout_marginTop="30dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_below="@+id/bank_name_layout"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:id="@+id/branch_text"/>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/branch_text"
+                        android:paddingLeft="40dp"
+                        android:paddingRight="10dp"
+                        android:id="@+id/branch_layout">
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/branch_value"
+                            android:singleLine="true"
+                            />
+                    </android.support.design.widget.TextInputLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="IFSC Code"
+                        android:layout_marginTop="30dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_below="@+id/branch_layout"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:id="@+id/ifsc_text"/>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/ifsc_text"
+                        android:paddingLeft="40dp"
+                        android:paddingRight="10dp"
+                        android:id="@+id/ifsc_layout"
+                        android:paddingBottom="30dp">
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/ifsc_value"
+                            android:singleLine="true"
+                            />
+                    </android.support.design.widget.TextInputLayout>
+
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:layout_below="@+id/bank_info_card"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal"
+                >
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Save"
+                    style="?borderlessButtonStyle"
+                    android:textSize="20sp"
+                    android:textColor="@color/buttons_color"
+                    android:textAllCaps="false"
+                    android:id="@+id/bank_edit_save"/>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Back"
+                    style="?borderlessButtonStyle"
+                    android:textSize="20sp"
+                    android:textColor="@color/buttons_color"
+                    android:textAllCaps="false"
+                    android:id="@+id/bank_edit_back"/>
+
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

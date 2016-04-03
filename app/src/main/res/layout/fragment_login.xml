@@ -1,0 +1,139 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="@color/background_color">
+
+    <ImageView
+        android:layout_width="@dimen/login_image_width"
+        android:layout_height="@dimen/login_image_heigth"
+        android:layout_marginTop="25dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/admin"
+        android:id="@+id/admin_image"/>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/admin_image"
+        android:id="@+id/login_card_view"
+        android:layout_margin="15dp"
+        android:layout_marginTop="25dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/card_view_relative">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:id="@+id/login_color"
+                android:background="@color/colorPrimaryDark"></RelativeLayout>
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/user_icon"
+            android:src="@drawable/user"
+            android:layout_marginTop="40sp"/>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/user_icon"
+            android:layout_marginTop="30dp"
+            android:id="@+id/layout_edit_email_phone"
+            android:layout_marginLeft="20dp">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Email or Phone Number"
+                android:id="@+id/edit_email_phone"
+                android:singleLine="true"/>
+        </android.support.design.widget.TextInputLayout>
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/key"
+                android:layout_below="@id/user_icon"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="30dp"
+                android:id="@+id/password_icon"
+                />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/layout_edit_email_phone"
+                android:layout_toRightOf="@+id/password_icon"
+                android:layout_marginLeft="20dp"
+                android:id="@+id/layout_edit_userPassword">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:id="@+id/edit_userPassword"
+                android:singleLine="true"/>
+            </android.support.design.widget.TextInputLayout>
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/layout_edit_userPassword"
+                android:text="Remember Me"
+                android:id="@+id/checkbox_remember"
+                android:layout_marginTop="20dp"
+                />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_below="@+id/checkbox_remember"
+                android:layout_marginTop="20dp"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:paddingBottom="20dp">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Login"
+                android:id="@+id/button_login"
+                style="?android:attr/borderlessButtonStyle"
+                android:textSize="20sp"
+                android:textAllCaps="false"
+                android:textColor="@color/buttons_color"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Register"
+                android:id="@+id/button_register"
+                style="?android:attr/borderlessButtonStyle"
+                android:textSize="20sp"
+                android:textAllCaps="false"
+                android:textColor="@color/buttons_color"/>
+            </LinearLayout>
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Forgot Password ?"
+        android:fontFamily="Kristen ITC"
+        android:layout_below="@id/login_card_view"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        />
+
+
+</RelativeLayout>

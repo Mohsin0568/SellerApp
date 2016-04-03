@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:fitsSystemWindows="true"
+    tools:context="com.example.mohmurtu.registration.ProductFilter">
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Orders Filter"
+        android:layout_marginTop="20dp"
+        android:textSize="25sp"
+        android:layout_marginLeft="30dp"
+        android:textColor="@color/teal_color"
+        android:id="@+id/filter_text"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@id/filter_text"
+        android:background="@color/colorPrimaryDark"
+        android:layout_marginTop="10dp"
+        android:id="@+id/filter_line"/>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/filter_line"
+        android:id="@+id/order_filter_group"
+        android:layout_marginTop="20dp"
+        >
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Confirmation Pending"
+            android:textSize="15sp"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/confirmation_pending"
+            />
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Shipment Pending"
+            android:textSize="15sp"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/shipment_pending"
+            android:layout_marginTop="10dp"
+            />
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cancelled Products"
+            android:textSize="15sp"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/cancelled_products"
+            android:layout_marginTop="10dp"
+            />
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Delivery Pending"
+            android:textSize="15sp"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/delivery_pending"
+            android:layout_marginTop="10dp"
+            />
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Delivered Products"
+            android:textSize="15sp"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/delivered_products"
+            android:layout_marginTop="10dp"
+            />
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cancelled By Customer"
+            android:textSize="15sp"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/cancelled_by_customer"
+            android:layout_marginTop="10dp"
+            />
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="All"
+            android:textSize="15sp"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/all_products"
+            android:layout_marginTop="10dp"
+            />
+    </RadioGroup>
+
+    <!--<Button-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_below="@id/order_filter_group"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:text="Apply Filter"-->
+        <!--android:textSize="20dp"-->
+        <!--style="?attr/borderlessButtonStyle"-->
+        <!--android:textColor="@color/buttons_color"-->
+        <!--android:textAllCaps="false"-->
+        <!--android:layout_marginTop="20dp"-->
+        <!--android:id="@+id/filter_button"/>-->
+
+
+</RelativeLayout>

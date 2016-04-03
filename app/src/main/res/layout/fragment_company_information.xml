@@ -1,0 +1,347 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.mohmurtu.registration.CompanyInformation"
+    android:orientation="vertical"
+    android:background="@color/background_color">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.CardView android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:id="@+id/card_view_basic"
+                android:layout_margin="8dp"
+                android:layout_marginTop="20dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    android:background="#E91E63"
+                    android:id="@+id/basic_color"
+                    ></RelativeLayout>
+
+
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="Basic Information"
+                    android:inputType="textCapWords"
+                    android:layout_marginTop="20dp"
+                    android:layout_centerHorizontal="true"
+                    android:textSize="30sp"
+                    android:id="@+id/company_text"
+                    android:layout_below="@+id/basic_color"
+
+                    />
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/layout_edit_name"
+                    android:layout_marginTop="20dp"
+                    android:layout_below="@+id/company_text">
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Name"
+                        android:id="@+id/edit_name"
+                        android:singleLine="true"/>
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/layout_edit_password"
+                    android:layout_below="@id/layout_edit_name"
+                    android:layout_marginTop="20dp">
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Password"
+                        android:id="@+id/edit_password"
+                        android:inputType="textPassword"
+                        android:singleLine="true"/>
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/layout_edit_password"
+                    android:layout_marginTop="20dp"
+                    android:id="@+id/layout_edit_phone">
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Phone Number"
+                        android:inputType="phone"
+                        android:id="@+id/edit_phone"/>
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/layout_edit_phone"
+                    android:layout_marginTop="20dp"
+                    android:id="@+id/layout_edit_alt_phone">
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/edit_alt_phone"
+                        android:hint="Alternate Phone Number (Optional)"
+                        android:inputType="phone"/>
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/layout_edit_alt_phone"
+                    android:layout_marginTop="20dp"
+                    android:paddingBottom="20dp"
+                    android:id="@+id/layout_edit_email">
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textEmailAddress"
+                        android:hint="Email Id"
+                        android:id="@+id/edit_email"/>
+                </android.support.design.widget.TextInputLayout>
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/card_view_address"
+                android:layout_margin="8dp"
+                android:layout_marginTop="20dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="5dp"
+                        android:background="#9C27B0"
+                        android:id="@+id/address_color"
+                        ></RelativeLayout>
+
+                   <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Address Details"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="20dp"
+                        android:textSize="30sp"
+                        android:id="@+id/text_address"
+                       android:layout_below="@id/address_color"/>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/text_address"
+                        android:layout_marginTop="20dp"
+                        android:id="@+id/layout_edit_address">
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/edit_address"
+                            android:inputType="textPostalAddress"
+                            android:hint="Address"/>
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/layout_edit_address"
+                        android:layout_marginTop="20dp"
+                        android:id="@+id/layout_edit_pincode">
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Pincode"
+                            android:id="@+id/edit_pincode"
+                            android:inputType="number"/>
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/layout_edit_pincode"
+                        android:layout_marginTop="20dp"
+                        android:id="@+id/layout_edit_city">
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/edit_city"
+                            android:hint="City"
+                            android:singleLine="true"/>
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/layout_edit_city"
+                        android:layout_marginTop="20dp"
+                        android:id="@+id/layout_edit_state"
+                        android:paddingBottom="20dp">
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/edit_state"
+                            android:hint="State"
+                            android:singleLine="true"/>
+                    </android.support.design.widget.TextInputLayout>
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/card_view_bank"
+                android:layout_margin="8dp"
+                android:layout_marginTop="20dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="5dp"
+                        android:background="#F44336"
+                        android:id="@+id/bank_color"
+                        ></RelativeLayout>
+
+                   <TextView
+                       android:layout_centerHorizontal="true"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_marginTop="20dp"
+                       android:text="KYC and Bank Details"
+                       android:textSize="30sp"
+                       android:id="@+id/text_bank"
+                       android:layout_below="@id/bank_color"/>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/text_bank"
+                        android:layout_marginTop="20dp"
+                        android:id="@+id/layout_edit_beneficiary">
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Beneficiary Name"
+                            android:id="@+id/edit_beneficiary"
+                            android:singleLine="true"/>
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/layout_edit_beneficiary"
+                        android:layout_marginTop="20dp"
+                        android:id="@+id/layout_edit_account">
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Account Number"
+                            android:id="@+id/edit_account"
+                            android:inputType="number"/>
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/layout_edit_account"
+                        android:layout_marginTop="20dp"
+                        android:id="@+id/layout_edit_bank">
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Bank Name"
+                            android:id="@+id/edit_bank"
+                            android:singleLine="true"/>
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/layout_edit_bank"
+                        android:layout_marginTop="20dp"
+                        android:id="@+id/layout_edit_branch">
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Branch"
+                            android:id="@+id/edit_branch"
+                            android:singleLine="true"/>
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/layout_edit_branch"
+                        android:layout_marginTop="20dp"
+                        android:id="@+id/layout_edit_ifsc"
+                        android:paddingBottom="20dp">
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="IFSC Code"
+                            android:id="@+id/edit_ifsc"
+                            android:singleLine="true"/>
+                    </android.support.design.widget.TextInputLayout>
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/layout_edit_ifsc"
+                android:layout_marginTop="10dp"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Back"
+                    android:id="@+id/button_back"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:textSize="20sp"
+                    android:textAllCaps="false"
+                    android:textColor="@color/buttons_color"
+                    />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/button_register"
+                    android:text="Register"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:textSize="20sp"
+                    android:textAllCaps="false"
+                    android:textColor="@color/buttons_color"/>
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

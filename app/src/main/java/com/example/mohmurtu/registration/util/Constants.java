@@ -14,6 +14,7 @@ public class Constants {
     public static final String REGISTER_URL = "/seller/register";
     public static final String LOGIN_URL = "/seller/login";
     public static final String CATEGORY_URL = "/categories/getAllCategories";
+    public static final String CHECK_CATEGORY_URL = "/categories/checkAndGetAllCategories";
     public static final String GET_PROPERTIES_URL = "/property/getPropertiesAndValues";
     public static final String UPLOAD_PRODUCT_URL = "/products/addProductDetails";
     public static final String UPLOAD_IMAGE_URL = "/products/addProductImages";

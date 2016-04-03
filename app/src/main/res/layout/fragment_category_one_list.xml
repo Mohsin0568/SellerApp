@@ -6,7 +6,9 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="fill_parent" >
+        android:layout_height="fill_parent"
+        android:id="@+id/category_content"
+        android:visibility="gone">
 
         <ImageView
             android:layout_width="match_parent"
@@ -35,5 +37,19 @@
                 android:layout_height="1dp" />
         </RelativeLayout>
     </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your Company VAT Details needs to be verified yet or you may not have entered VAT details yet."
+        android:textSize="20sp"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:id="@+id/category_not_listed"
+        android:textColor="@color/gray_color"
+        android:visibility="gone"
+        />
+
 
 </RelativeLayout>

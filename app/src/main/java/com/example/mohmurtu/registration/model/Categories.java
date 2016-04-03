@@ -7,8 +7,16 @@ import java.util.List;
  */
 public class Categories {
 
-    private boolean issuccess ;
+    private boolean issuccess, accessFlag ;
     private List<CategoryOne> categories ;
+
+    public boolean isAccessFlag() {
+        return accessFlag;
+    }
+
+    public void setAccessFlag(boolean accessFlag) {
+        this.accessFlag = accessFlag;
+    }
 
     public boolean issuccess() {
         return issuccess;

@@ -167,7 +167,7 @@ public class EditCompanyInformation extends Fragment implements DataListener {
         try{
             JSONObject json = new JSONObject(response);
             if(json.getBoolean("issuccess") == true) {
-                Toast.makeText(context, "Changes Saved Successfully", Toast.LENGTH_SHORT).show();
+                Toast.makeText(context, "Changes Saved Successfully, You will not be able to upload new products once your new details are verified", Toast.LENGTH_SHORT).show();
                 vd.setPanNumber(dpanNumber);
                 vd.setVatNumber(dvatNumber);
                 vd.setCstNumber(dcstNumber);
